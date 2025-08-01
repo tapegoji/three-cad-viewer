@@ -173,8 +173,8 @@
     const timer = new Timer("main", timeit);
 
     const displayOptions = {
-      cadWidth: 850,
-      height: 525,
+      cadWidth: window.innerWidth - 200,
+      height: window.innerHeight - 200,
       treeWidth: 240,
       theme: "browser",
       pinning: true,
@@ -226,8 +226,8 @@
       // zoom: 1,
       // glass: true,
       collapse: 3,
-      measureTools: false,
-      selectTool: false
+      measureTools: true,
+      selectTool: true
     };
     
     function showViewer(control, mode, containerId) {
